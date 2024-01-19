@@ -23,7 +23,7 @@ body {
 }
 
 .links-frame {
-  width: 40%;
+  max-width: 60%;
   border-radius: 10px;
   background: rgba(111, 68, 54, 0.8);
   padding: 1em;
@@ -39,7 +39,7 @@ body {
 .links {
   list-style-type: none;
   display: flex;
-  gap: 5em;
+  gap: 3em;
 }
 
 a {
@@ -69,7 +69,7 @@ a:hover {
 
 @media only screen and (max-width: 800px) {
   .links-frame {
-    width: 50%;
+    max-width: 60%;
   }
 
   .links {
