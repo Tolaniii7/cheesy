@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cheese-cake</title>
     <link rel="stylesheet" href="style.css" />
+    
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
   </head>
   <body>
     <header>
@@ -22,12 +25,56 @@
 
         <button class="nav-button">Sign Up</button>
       </nav>
+
     </header>
 
+
+      <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <form action="" method="GET" id="Form">
+               <div class="input-box">
+                  <input type="text" name="" id="name-input-1" placeholder="Name" class="name-input">
+                  <!-- <i class="fa-solid fa-circle-check" style="color: red;"></i>
+                  <i class="fas fa-exclamation-circle" style="color: red;" ></i> -->
+                  <span class="name-error"></span>
+              </div>
+
+              <div class="input-box">
+                <input type="email" name="" id="email-input-1" placeholder="email" class="email-input">
+                
+                 <!-- <i class="fa-solid fa-circle-check" style="color: red;"></i>
+                 <i class="fas fa-exclamation-circle" style="color: red;" ></i> -->
+                 <span class="email-error"></span>
+              </div>
+                
+              <div class="input-box">
+                <input type="password" name="" id="password-input" placeholder="password"   class="password-input">
+                  <!-- <i class="fa-solid fa-circle-check" style="color: red;"></i>
+                 <i class="fas fa-exclamation-circle" style="color: red;" ></i> -->
+                <span class="password-error"></span>
+              </div>
+
+
+              <div class="input-box">
+                <input type="password" name="" id="password-input-2" placeholder=" check password"   class="password-input-2">
+                  <!-- <i class="fa-solid fa-circle-check" style="color: red;"></i>
+                 <i class="fas fa-exclamation-circle" style="color: red;" ></i> --> 
+                <span class="password-2-error"></span>
+              </div>
+
+                <button class="button--4">Submit</button>
+                <p class="success hidden">Registration submitted successfully <i class="fa-solid fa-circle-check" style="color: #fff;"></i></p>
+                
+          </form>
+      </div>
+    <div class="overlay hidden"></div>
+
+
     <section class="section--1">
+      
       <div class="intro">
         <h1 class="title">
-          Bite The World of <br />
+          Bite The World of 
           Cheesecake Wonders
         </h1>
         <br />
@@ -54,10 +101,7 @@
           At Cheesecake Love, quality is our cornerstone. Each cheesecake
           is crafted with the finest ingredients,
           meticulous attention to detail, and a dash of creativity.
-          <br >
-          <br>
-          <br>
-
+          <br > 
           We believe in delivering not just desserts but moments of  sheer
           indulgence.
         </p>
@@ -199,18 +243,34 @@
 
 
         <div class="footer-form">
-            <form action="" class="form">
-                <input type="text" name="" id="" placeholder="Name" class="name-input">
-                <input type="email" name="" id="" placeholder="email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="paragraph"></textarea>
+            <form action="" method="GET"   id="form2">
+                <input type="text" name="" id="name-input-2" placeholder="Name" class="contact-name-input">
+                <span class="contact-name-error"></span>
+
+                <input type="email" name="" id="email-input-2" placeholder="email" class="contact-email-input">
+                <span class="contact-email-error"></span>
+
+                <textarea name="" id="text-input" cols="30" rows="10" placeholder="Your Message" class="paragraph"></textarea>
+                <span class="text-error"></span>
+
+
+
+                <button class="contact">submit</button>
+               <p class="footer-success"  style="color: red;"></p>
+      
             </form>
 
-                <button class="contact">Contact us now</button>
+        <div class="footer-modal contact-hidden">
+                    <button class="footer-close-modal">&times;</button>
+                    <p class="footer-success"  style="color: rgb(146, 146, 221);">Message submitted Successfully. <br> <span class="feedback">you will be contacted shortly through the mail provided😆</span>   </p>
+        </div>
+          <div class="footer-overlay contact-hidden"></div>
         </div>
         
+     
         
     </footer>
-    
+          
   </body>
   <script src="script.js"></script>
 </html>
